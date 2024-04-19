@@ -12,7 +12,8 @@ const AmountInput = ({children,...props}:any) =>{
             setAmount(amount-1)
     }
 
-    useEffect(props.onChange(amount)
+    useEffect(()=>
+            props.onChange(amount)
         ,[amount])
 
     return(
